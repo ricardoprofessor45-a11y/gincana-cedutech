@@ -1,0 +1,39 @@
+[ {
+  "id" : 1769713950227,
+  "aluno" : {
+    "nome" : "Ricardo",
+    "matricula" : "20230012",
+    "turma" : "2503B"
+  },
+  "jovemConvidado" : {
+    "nome" : "Rodrigo",
+    "idade" : 13,
+    "periodo" : "MANHA",
+    "telefone" : "48995422367",
+    "excecaoIdade" : false
+  },
+  "responsavel" : {
+    "nome" : "Jair cairo",
+    "telefone" : "48999666555"
+  },
+  "dataCadastro" : [ 2026, 1, 29 ]
+}, {
+  "id" : 1769714065299,
+  "aluno" : {
+    "nome" : "Ana Paula",
+    "matricula" : "112233",
+    "turma" : "3604A"
+  },
+  "jovemConvidado" : {
+    "nome" : "Jessica da silva",
+    "idade" : 18,
+    "periodo" : "NOITE",
+    "telefone" : "48995422378",
+    "excecaoIdade" : false
+  },
+  "responsavel" : {
+    "nome" : "Carlos",
+    "telefone" : "48999666584"
+  },
+  "dataCadastro" : [ 2026, 1, 29 ]
+} ]

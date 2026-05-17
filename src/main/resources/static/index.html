@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gincana CEDUTECH</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>🏆 Gincana CEDUTECH</h1>
+</header>
+
+<main>
+
+    <!-- CADASTRO -->
+    <section class="card">
+        <h2>Cadastro de Jovem</h2>
+
+        <form id="cadastroForm">
+
+            <h3>Aluno que convidou</h3>
+            <input type="text" id="alunoNome" placeholder="Nome do aluno" required>
+            <input type="text" id="alunoMatricula" placeholder="Matrícula do aluno" required>
+            <input type="text" id="alunoTurma" placeholder="Turma do aluno" required>
+
+            <h3>Jovem convidado</h3>
+            <input type="text" id="jovemNome" placeholder="Nome do jovem" required>
+            <input type="number" id="jovemIdade" placeholder="Idade" required>
+
+            <select id="jovemPeriodo" required>
+                <option value="">Período que estuda</option>
+                <option value="MANHA">Manhã</option>
+                <option value="TARDE">Tarde</option>
+                <option value="NOITE">Noite</option>
+            </select>
+
+            <input type="text" id="jovemTelefone" placeholder="Telefone do jovem" required>
+
+            <h3>Responsável</h3>
+            <input type="text" id="respNome" placeholder="Nome do responsável" required>
+            <input type="text" id="respTelefone" placeholder="Telefone do responsável" required>
+
+            <p id="avisoIdade" class="aviso"></p>
+
+            <button type="submit">Salvar / Atualizar Cadastro</button>
+        </form>
+    </section>
+
+    <!-- LISTA DE CADASTROS -->
+    <section class="card">
+        <h2>Cadastros Realizados</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Aluno</th>
+                    <th>Matrícula</th>
+                    <th>Turma</th>
+                    <th>Jovem</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="listaCadastros">
+                <!-- preenchido via JS -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- RANKING -->
+    <section class="card">
+        <h2>Resultados</h2>
+
+        <button onclick="carregarRanking()">Atualizar Ranking</button>
+
+        <h3>Ranking por Aluno</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Aluno</th>
+                    <th>Matrícula</th>
+                    <th>Turma</th>
+                    <th>Cadastros</th>
+                </tr>
+            </thead>
+            <tbody id="rankingAlunos"></tbody>
+        </table>
+
+        <h3>Ranking por Turma</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Turma</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="rankingTurmas"></tbody>
+        </table>
+
+        <h3 id="turmaVencedora"></h3>
+    </section>
+
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>
